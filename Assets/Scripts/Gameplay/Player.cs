@@ -21,38 +21,16 @@ namespace Gameplay {
         public float jumpGracePeriod = .05f;
         [Tooltip("Distance from the player's origin to the ground at which the player is considered grounded")]
         public float groundDistance = .5f;
+        
+        private static Player _instance;
 
         private Transform _transform;
         private Rigidbody2D _rigidbody;
         private Interaction _hoveredInteraction;
         private float _groundTimer;
 
-        private void Start() {
-            _transform = transform;
-            _rigidbody = GetComponent<Rigidbody2D>();
-        }
-        
-        private void Update() {
-            if (IsGrounded()) _groundTimer = 0;
-            _groundTimer += Time.deltaTime;
-
-            if (CanJump() && Input.GetButtonDown("Jump")) {
-                _groundTimer = jumpGracePeriod + 1;
-                _rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            }
-            
-            float xInput = Input.GetAxisRaw("Horizontal");
-            if (Mathf.Abs(xInput) > moveDeadzone) {
-                if (Mathf.Abs(_rigidbody.velocity.x) < moveSpeed)
-                    _rigidbody.AddForce(Vector2.right * xInput * moveAcceleration, ForceMode2D.Impulse);
-            } else {
-                _rigidbody.velocity *= new Vector2(moveDecelerationMultiplier, 1);
-            }
-
-            if (_hoveredInteraction != null && !_hoveredInteraction.IsInteractable()) _hoveredInteraction = null;
-            if (_hoveredInteraction != null && Input.GetButtonDown("Interact")) {
-                _hoveredInteraction.Interact();
-            }
+        public static Player Get() {
+            return _instance;
         }
 
         private bool CanJump() {
@@ -77,6 +55,36 @@ namespace Gameplay {
             if (interaction != null && interaction == _hoveredInteraction) {
                 _hoveredInteraction = null;
                 InteractionIndicator.Hide();
+            }
+        }
+
+        private void Start() {
+            _instance = this;
+            
+            _transform = transform;
+            _rigidbody = GetComponent<Rigidbody2D>();
+        }
+        
+        private void Update() {
+            if (IsGrounded()) _groundTimer = 0;
+            _groundTimer += Time.deltaTime;
+
+            if (CanJump() && Input.GetButtonDown("Jump")) {
+                _groundTimer = jumpGracePeriod + 1;
+                _rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            }
+            
+            float xInput = Input.GetAxisRaw("Horizontal");
+            if (Mathf.Abs(xInput) > moveDeadzone) {
+                if (Mathf.Abs(_rigidbody.velocity.x) < moveSpeed)
+                    _rigidbody.AddForce(Vector2.right * xInput * moveAcceleration, ForceMode2D.Impulse);
+            } else {
+                _rigidbody.velocity *= new Vector2(moveDecelerationMultiplier, 1);
+            }
+
+            if (_hoveredInteraction != null && !_hoveredInteraction.IsInteractable()) _hoveredInteraction = null;
+            if (_hoveredInteraction != null && Input.GetButtonDown("Interact")) {
+                _hoveredInteraction.Interact();
             }
         }
     }
