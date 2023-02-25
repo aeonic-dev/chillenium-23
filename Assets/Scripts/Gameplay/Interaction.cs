@@ -5,7 +5,7 @@ namespace Gameplay {
     public abstract class Interaction : MonoBehaviour {
         public abstract void Interact();
 
-        public bool IsInteractable() {
+        public virtual bool IsInteractable() {
             return true;
         }
 
