@@ -18,6 +18,8 @@ namespace Core {
             PresentObjectiveInteraction presentObjective = (from obj in Object.FindObjectsOfType<PresentObjectiveInteraction>()
                 where obj.objective == _currentObjective select obj).FirstOrDefault();
             if (presentObjective != null) presentObjective.Complete();
+            
+            SceneManager.SetActiveScene(_returnScene);
         }
         
         public static void StartLevel(Objective objective) {
@@ -28,8 +30,8 @@ namespace Core {
             SceneHook.Get().QueueStartLevel(objective);
         }
 
-        public static void OnLevelLoaded(Objective objective) {
-            objective.scene.SetActiveScene();
+        public static bool OnLevelLoaded(Objective objective) {
+            return objective.scene.SetActiveScene();
         }
     }
 }

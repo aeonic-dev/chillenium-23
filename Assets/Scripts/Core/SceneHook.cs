@@ -22,8 +22,7 @@ namespace Core {
         }
         
         private void Update() {
-            if (_queuedObjective != null) {
-                GameManager.OnLevelLoaded(_queuedObjective);
+            if (_queuedObjective != null && GameManager.OnLevelLoaded(_queuedObjective)) {
                 _queuedObjective = null;
             }
         }
