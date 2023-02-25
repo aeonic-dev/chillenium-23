@@ -11,6 +11,7 @@ namespace Core {
         public static Objective CurrentObjective => GameState == GameState.Level ? _currentObjective : null;
         
         private static Objective _currentObjective;
+        
 
         public static void CompleteLevel() {
             PresentObjectiveInteraction presentObjective = (from obj in Object.FindObjectsOfType<PresentObjectiveInteraction>()
