@@ -1,4 +1,5 @@
 ﻿using UI;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Gameplay {
@@ -30,6 +31,7 @@ namespace Gameplay {
         private float _groundTimer;
 
         public static Player Get() {
+            if (_instance.IsDestroyed()) return FindObjectOfType<Player>();
             return _instance;
         }
 
@@ -58,9 +60,11 @@ namespace Gameplay {
             }
         }
 
-        private void Start() {
+        private void Awake() {
             _instance = this;
-            
+        }
+
+        private void Start() {
             _transform = transform;
             _rigidbody = GetComponent<Rigidbody2D>();
         }

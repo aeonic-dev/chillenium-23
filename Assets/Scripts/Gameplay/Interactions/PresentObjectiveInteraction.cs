@@ -1,4 +1,5 @@
-﻿using Core;
+﻿using System;
+using Core;
 using UnityEngine;
 
 namespace Gameplay.Interactions {
@@ -12,7 +13,6 @@ namespace Gameplay.Interactions {
         
         public void Complete() {
             _isComplete = true;
-            _renderer.sprite = completedSprite;
         }
         
         public override void Interact() {
@@ -21,6 +21,14 @@ namespace Gameplay.Interactions {
         
         public override bool IsInteractable() {
             return !_isComplete;
+        }
+
+        private void Start() {
+            _renderer = GetComponent<SpriteRenderer>();
+        }
+
+        private void Update() {
+            if (_isComplete && _renderer.sprite != completedSprite) _renderer.sprite = completedSprite;
         }
     }
 }
