@@ -1,7 +1,5 @@
-﻿using System;
-using UI;
+﻿using UI;
 using UnityEngine;
-using Util;
 
 namespace Gameplay {
     [RequireComponent(typeof(Rigidbody2D))]
