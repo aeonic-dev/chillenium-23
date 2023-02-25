@@ -61,7 +61,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7623703029318248104}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 8.31, y: -5.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -109,7 +109,7 @@ SpriteRenderer:
   m_SortingLayerID: -1608618667
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -419190605, guid: f9bb30ffc109eeb469d04ffe9f284ab5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -154,10 +154,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveDeadzone: 0.2
-  moveSpeed: 6
+  moveSpeed: 3
   moveAcceleration: 0.3
   moveDecelerationMultiplier: 0.95
-  jumpForce: 15
+  jumpForce: 10
   jumpGracePeriod: 0.1
   groundDistance: 0.5
 --- !u!61 &7623703029318248111
@@ -173,7 +173,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.00054994226, y: -0.11395192}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -184,8 +184,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 0.8}
-  m_EdgeRadius: 0.1
+  m_Size: {x: 0.19654197, y: 0.70475626}
+  m_EdgeRadius: 0.03
 --- !u!1 &7623703029809385505
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,7 +214,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7623703029809385505}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5, y: -2.5, z: -14.42}
+  m_LocalPosition: {x: 2.46, y: -4.45, z: -14.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -248,7 +248,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5.71
+  orthographic size: 7.4070272
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
