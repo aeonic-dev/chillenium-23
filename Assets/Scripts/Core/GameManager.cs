@@ -9,7 +9,8 @@ namespace Core {
     public class GameManager {
         public static GameState GameState = GameState.Menu;
         public static Objective CurrentObjective => GameState == GameState.Level ? _currentObjective : null;
-        
+
+        private static Scene _returnScene;
         private static Objective _currentObjective;
         
 
