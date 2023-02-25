@@ -136,7 +136,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -157,7 +157,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -178,7 +178,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -191,15 +191,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Interior_Assets_3
+      name: Prop_Bed_Past
       rect:
         serializedVersion: 2
         x: 192
         y: 576
-        width: 64
-        height: 64
+        width: 120
+        height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -207,27 +207,6 @@ TextureImporter:
       bones: []
       spriteID: ea0cc34686371534c837891a7d28a471
       internalID: -586090763
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Interior_Assets_4
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 576
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 72af2587d48862e44b2ff2018ae01ed3
-      internalID: 1278044202
       vertices: []
       indices: 
       edges: []
@@ -241,7 +220,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -262,7 +241,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -283,7 +262,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -296,15 +275,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Interior_Assets_8
+      name: Prop_Bookshelf
       rect:
         serializedVersion: 2
         x: 512
-        y: 576
+        y: 512
         width: 64
-        height: 64
+        height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -325,7 +304,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -338,15 +317,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Interior_Assets_10
+      name: Prop_Chest_Past
       rect:
         serializedVersion: 2
         x: 0
         y: 512
-        width: 64
-        height: 64
+        width: 110
+        height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -354,27 +333,6 @@ TextureImporter:
       bones: []
       spriteID: d866bda310528bd478025af4aee18410
       internalID: 1654963881
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Interior_Assets_11
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 512
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a9716ed4c285044c855e660fcd39f5d
-      internalID: 942715260
       vertices: []
       indices: 
       edges: []
@@ -388,7 +346,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -409,7 +367,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -430,7 +388,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -451,7 +409,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -464,15 +422,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Interior_Assets_16
+      name: Prop_Bed_Adult_Lower
       rect:
         serializedVersion: 2
         x: 384
         y: 512
-        width: 64
+        width: 128
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -480,48 +438,6 @@ TextureImporter:
       bones: []
       spriteID: e2dff034e3fb3054299b19c9bca9b089
       internalID: 1136779737
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Interior_Assets_17
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 512
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c1ffe6877741a1e43950d50eb6760c4b
-      internalID: 107982007
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Interior_Assets_18
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 512
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4efdfe3f18002864bb242f66e3384c99
-      internalID: 77761564
       vertices: []
       indices: 
       edges: []
@@ -535,7 +451,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -548,15 +464,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Interior_Assets_20
+      name: Prop_Door_Past
       rect:
         serializedVersion: 2
         x: 0
-        y: 448
-        width: 64
-        height: 64
+        y: 384
+        width: 59
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -569,36 +485,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Interior_Assets_21
+      name: Prop_TV_Adult
       rect:
         serializedVersion: 2
         x: 128
-        y: 448
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 51d05e6c06cc28a4bba22f378341ffd4
-      internalID: 667345270
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Interior_Assets_22
-      rect:
-        serializedVersion: 2
-        x: 0
         y: 384
-        width: 64
-        height: 64
+        width: 42
+        height: 89
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -611,15 +506,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Interior_Assets_23
+      name: Prop_Couch
       rect:
         serializedVersion: 2
-        x: 64
+        x: 256
         y: 384
-        width: 64
-        height: 64
+        width: 256
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -632,99 +527,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Interior_Assets_24
+      name: Prop_Door_Adult
       rect:
         serializedVersion: 2
-        x: 128
+        x: 64
         y: 384
-        width: 64
-        height: 64
+        width: 29
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b602b5d6258669428ab3bf6ea1c791d
-      internalID: 823470394
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Interior_Assets_25
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 384
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a496241dae0f5b246ab6ab317ec5adbc
-      internalID: 1378179889
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Interior_Assets_26
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 384
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c152917a0dbfd014ba290beecdd608b9
-      internalID: 1736254887
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Interior_Assets_27
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 384
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b394344ab78e7994cad25deb7a52b6e6
-      internalID: -739039457
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Interior_Assets_28
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 384
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -737,22 +548,85 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Interior_Assets_29
+      name: Interior_Assets_30
       rect:
         serializedVersion: 2
-        x: 448
+        x: 192
         y: 384
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0a45e42a53f1eb47917e2fc401dadb1
-      internalID: -798887228
+      spriteID: 2d1a109625653a54e9beb8212e8bf913
+      internalID: 1229325484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Couch_Past
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 384
+        width: 120
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6367ffac9d39ea4eb126f2b855ceaff
+      internalID: 2071689741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Stairs_Past
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 61
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceed5476d628d8c4693194c79f8e357c
+      internalID: 209060534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Stairs_Adult
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 120
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c287ace929b3f494984d9c99cb37ba4d
+      internalID: -407204625
       vertices: []
       indices: 
       edges: []
@@ -768,34 +642,51 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Interior_Assets_3: -586090763
-      Interior_Assets_10: 1654963881
-      Interior_Assets_0: -940689764
+      Interior_Assets_44: -1874706817
+      Prop_Stairs_Adult: -407204625
       Interior_Assets_27: -739039457
-      Interior_Assets_28: 1995641449
+      Interior_Assets_36: -2145484814
       Interior_Assets_19: -1246199575
       Interior_Assets_5: -1164542619
+      Prop_Couch: -944338689
       Interior_Assets_18: 77761564
-      Interior_Assets_4: 1278044202
       Interior_Assets_15: -564888655
-      Interior_Assets_22: -648050628
+      Interior_Assets_42: -1201474378
       Interior_Assets_1: 1168721806
-      Interior_Assets_8: -1969555028
       Interior_Assets_24: 823470394
-      Interior_Assets_26: 1736254887
-      Interior_Assets_11: 942715260
       Interior_Assets_7: 1171515864
-      Interior_Assets_29: -798887228
+      Interior_Assets_39: -1234558302
       Interior_Assets_9: -255451947
-      Interior_Assets_23: -944338689
-      Interior_Assets_16: 1136779737
-      Interior_Assets_20: -753279262
-      Interior_Assets_25: 1378179889
-      Interior_Assets_2: -954702476
+      Interior_Assets_46: 597789091
+      Prop_Bed_Adult_Lower: 1136779737
+      Prop_Chest_Past: 1654963881
+      Interior_Assets_41: -652880973
+      Prop_Bookshelf: -1969555028
       Interior_Assets_17: 107982007
       Interior_Assets_13: -776567323
       Interior_Assets_6: 1113989608
       Interior_Assets_21: 667345270
+      Prop_Couch_Past: 2071689741
+      Prop_Door_Past: -753279262
+      Prop_Stairs_Past: 209060534
+      Interior_Assets_0: -940689764
+      Interior_Assets_45: -845160919
+      Interior_Assets_4: 1278044202
+      Interior_Assets_33: 1276743265
+      Interior_Assets_26: 1736254887
+      Prop_TV_Adult: -648050628
+      Interior_Assets_11: 942715260
+      Interior_Assets_34: 284652761
+      Prop_Bed_Past: -586090763
+      Interior_Assets_29: -798887228
+      Interior_Assets_32: -1617615992
+      Interior_Assets_30: 1229325484
+      Interior_Assets_25: 1378179889
+      Prop_Door_Adult: 1995641449
+      Interior_Assets_43: 766638313
+      Interior_Assets_40: -1213707201
+      Interior_Assets_2: -954702476
+      Interior_Assets_31: -1901535765
       Interior_Assets_14: 786337041
       Interior_Assets_12: 408516074
   spritePackingTag: 
