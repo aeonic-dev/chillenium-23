@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f9bb30ffc109eeb469d04ffe9f284ab5
+guid: b23fee94c7d85d048a042dddd449950f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BlueChild-idle-Sheet_0
+      name: BlueChild-jump-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad576a2f4edff0549abcf9958dd366ca
-      internalID: -419190605
+      spriteID: 12cd59dcc487391419392caaf3b52c6c
+      internalID: 1510308851
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueChild-idle-Sheet_1
+      name: BlueChild-jump-Sheet_1
       rect:
         serializedVersion: 2
         x: 64
@@ -139,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 224b269f32ba2f64ebb30e2f56158330
-      internalID: -1504401062
+      spriteID: 44ebaef797ef8404d9dc7209658f73f2
+      internalID: -554009742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueChild-idle-Sheet_2
+      name: BlueChild-jump-Sheet_2
       rect:
         serializedVersion: 2
         x: 128
@@ -160,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54fe849dadc29a7458433bfc0321d3bc
-      internalID: -200106142
+      spriteID: 4d96a7cc2f35f1a4fa52a6d4305ec789
+      internalID: 1013412702
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueChild-idle-Sheet_3
+      name: BlueChild-jump-Sheet_3
       rect:
         serializedVersion: 2
         x: 192
@@ -181,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b852cb2b2c69f7c4b92cfeb90fd18abe
-      internalID: 1021519802
+      spriteID: ec4c5a723faa3b14bb31b8e65559f17c
+      internalID: -1228007705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueChild-idle-Sheet_4
+      name: BlueChild-jump-Sheet_4
       rect:
         serializedVersion: 2
         x: 256
@@ -202,155 +202,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 344416de7b8ce9e4f840818ff075dc2f
-      internalID: 1324635804
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueChild-idle-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1de9ef73b7896d4db55c220ef75d8ef
-      internalID: -1542870802
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueChild-idle-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea58cdb7b422039498a745fb31b8492f
-      internalID: -134377949
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueChild-idle-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 118eb24456763954391b0a8a9077c0b8
-      internalID: 76682566
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueChild-idle-Sheet_8
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c9332925fa8d40d409a23d0ae8742479
-      internalID: 932460037
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueChild-idle-Sheet_9
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26a60a797e9011447bf3d247fd3896d9
-      internalID: -1358398423
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueChild-idle-Sheet_10
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 80fd11d7abeb1e74fa892797cbf7e326
-      internalID: 1297045117
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueChild-idle-Sheet_11
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a60da2dacac2b4b49a0e3c18d3239320
-      internalID: -181946642
+      spriteID: eb28713f32112a34cb8901fe86364707
+      internalID: 764591153
       vertices: []
       indices: 
       edges: []
@@ -366,18 +219,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BlueChild-idle-Sheet_6: -134377949
-      BlueChild-idle-Sheet_10: 1297045117
-      BlueChild-idle-Sheet_1: -1504401062
-      BlueChild-idle-Sheet_4: 1324635804
-      BlueChild-idle-Sheet_8: 932460037
-      BlueChild-idle-Sheet_0: -419190605
-      BlueChild-idle-Sheet_11: -181946642
-      BlueChild-idle-Sheet_3: 1021519802
-      BlueChild-idle-Sheet_5: -1542870802
-      BlueChild-idle-Sheet_9: -1358398423
-      BlueChild-idle-Sheet_7: 76682566
-      BlueChild-idle-Sheet_2: -200106142
+      BlueChild-jump-Sheet_1: -554009742
+      BlueChild-jump-Sheet_0: 1510308851
+      BlueChild-jump-Sheet_3: -1228007705
+      BlueChild-jump-Sheet_4: 764591153
+      BlueChild-jump-Sheet_2: 1013412702
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
