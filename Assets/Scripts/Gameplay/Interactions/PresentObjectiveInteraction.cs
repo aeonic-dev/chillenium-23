@@ -1,6 +1,6 @@
-﻿using System;
-using Core;
+﻿using Core;
 using UnityEngine;
+using Util;
 
 namespace Gameplay.Interactions {
     [RequireComponent(typeof(SpriteRenderer))]
@@ -9,10 +9,10 @@ namespace Gameplay.Interactions {
         public Sprite completedSprite;
 
         private SpriteRenderer _renderer;
-        private bool _isComplete;
+        [SerializeField] [ReadOnly] private bool isComplete;
         
         public void Complete() {
-            _isComplete = true;
+            isComplete = true;
         }
         
         public override void Interact() {
@@ -20,7 +20,7 @@ namespace Gameplay.Interactions {
         }
         
         public override bool IsInteractable() {
-            return !_isComplete;
+            return !isComplete;
         }
 
         private void Start() {
@@ -28,7 +28,7 @@ namespace Gameplay.Interactions {
         }
 
         private void Update() {
-            if (_isComplete && _renderer.sprite != completedSprite) _renderer.sprite = completedSprite;
+            if (isComplete && _renderer.sprite != completedSprite) _renderer.sprite = completedSprite;
         }
     }
 }
