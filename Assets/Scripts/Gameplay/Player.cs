@@ -1,4 +1,5 @@
 ﻿using System;
+using UI;
 using UnityEngine;
 using Util;
 
@@ -25,6 +26,7 @@ namespace Gameplay {
 
         private Transform _transform;
         private Rigidbody2D _rigidbody;
+        private Interaction _hoveredInteraction;
         private float _groundTimer;
 
         private void Start() {
@@ -48,6 +50,11 @@ namespace Gameplay {
             } else {
                 _rigidbody.velocity *= new Vector2(moveDecelerationMultiplier, 1);
             }
+
+            if (_hoveredInteraction != null && !_hoveredInteraction.IsInteractable()) _hoveredInteraction = null;
+            if (_hoveredInteraction != null && Input.GetButtonDown("Interact")) {
+                _hoveredInteraction.Interact();
+            }
         }
 
         private bool CanJump() {
@@ -57,6 +64,22 @@ namespace Gameplay {
         private bool IsGrounded() {
             RaycastHit2D hit = Physics2D.BoxCast(_transform.position, Vector2.one, 0, Vector2.down, groundDistance);
             return hit.collider != null;
+        }
+
+        private void OnTriggerEnter2D(Collider2D col) {
+            Interaction interaction = col.gameObject.GetComponent<Interaction>();
+            if (interaction != null && interaction.IsInteractable()) {
+                _hoveredInteraction = interaction;
+                InteractionIndicator.Show(_hoveredInteraction.transform.position);
+            }
+        }
+
+        private void OnTriggerExit2D(Collider2D col) {
+            Interaction interaction = col.gameObject.GetComponent<Interaction>();
+            if (interaction != null && interaction == _hoveredInteraction) {
+                _hoveredInteraction = null;
+                InteractionIndicator.Hide();
+            }
         }
     }
 }   
