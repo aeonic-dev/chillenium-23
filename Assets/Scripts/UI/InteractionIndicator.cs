@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 namespace UI {
     public class InteractionIndicator : MonoBehaviour {
@@ -12,12 +13,6 @@ namespace UI {
         private SpriteRenderer _renderer;
         private Vector3 _target;
         private float _targetOpacity;
-
-        private void Start() {
-            Instance = this;
-            _renderer = GetComponent<SpriteRenderer>();
-            _renderer.color = Color.clear;
-        }
 
         public static void Show(Vector3 position) {
             Instance.ShowInstance(position);
@@ -59,6 +54,16 @@ namespace UI {
                 if (doPosition) transform.position = Vector3.Lerp(startPosition, _target, fraction);
                 yield return null;
             }
+        }
+
+        private void Start() {
+            Instance = this;
+            _renderer = GetComponent<SpriteRenderer>();
+            _renderer.color = Color.clear;
+        }
+
+        private void Update() {
+            // if ()
         }
     }
 }

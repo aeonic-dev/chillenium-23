@@ -1,13 +1,16 @@
 ﻿using System.Linq;
 using Gameplay;
 using Gameplay.Interactions;
+using UI;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 namespace Core {
     public class GameManager {
         public static GameState GameState = GameState.Menu;
         public static Objective CurrentObjective => GameState == GameState.Level ? _currentObjective : null;
+        public static ControlType ControlType = ControlType.Keyboard;
 
         private static string _returnScene;
         private static Objective _currentObjective;
