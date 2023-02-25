@@ -10,6 +10,10 @@ namespace Core {
         [Tooltip("The point furthest to the right and up that the camera will ever see.")]
         public Vector2 topRight;
 
+        public static LevelBounds Get() {
+            return FindObjectOfType<LevelBounds>();
+        }
+
         private void OnDrawGizmos() {
             Vector2 topLeft = new(bottomLeft.x, topRight.y);
             Vector2 bottomRight = new(topRight.x, bottomLeft.y);
