@@ -50,7 +50,8 @@ namespace Gameplay {
             } else {
                 _rigidbody.velocity *= new Vector2(moveDecelerationMultiplier, 1);
             }
-            
+
+            if (_hoveredInteraction != null && !_hoveredInteraction.IsInteractable()) _hoveredInteraction = null;
             if (_hoveredInteraction != null && Input.GetButtonDown("Interact")) {
                 _hoveredInteraction.Interact();
             }
