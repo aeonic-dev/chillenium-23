@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8478825046518539408
+--- !u!1 &8327256893917535709
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8478825046518539374}
-  - component: {fileID: 8478825046518539375}
-  - component: {fileID: 8478825046518539373}
-  - component: {fileID: 8478825046518539372}
-  - component: {fileID: 8478825046518539371}
+  - component: {fileID: 8327256893917535523}
+  - component: {fileID: 8327256893917535522}
+  - component: {fileID: 8327256893917535520}
+  - component: {fileID: 8327256893917535521}
+  - component: {fileID: 8327256893917535526}
   m_Layer: 0
-  m_Name: Gameboy Objective (Present)
+  m_Name: Gameboy (Past)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8478825046518539374
+--- !u!4 &8327256893917535523
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8478825046518539408}
+  m_GameObject: {fileID: 8327256893917535709}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.25, y: -1.205, z: 0}
+  m_LocalPosition: {x: -1.25, y: 2.793, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &8478825046518539375
+--- !u!212 &8327256893917535522
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8478825046518539408}
+  m_GameObject: {fileID: 8327256893917535709}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -76,39 +76,39 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 93b998dd2a0c5e549b540e44bba2f643, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4c890a3e49f9f8c4e9da8f0abc87b36f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.64}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8478825046518539373
+--- !u!114 &8327256893917535520
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8478825046518539408}
+  m_GameObject: {fileID: 8327256893917535709}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 96d3c7b8c0a848998407fefa9b610add, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
-  amplitude: 0.02
+  speed: 2
+  amplitude: 0.05
   exponent: 1
---- !u!58 &8478825046518539372
+--- !u!58 &8327256893917535521
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8478825046518539408}
+  m_GameObject: {fileID: 8327256893917535709}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -118,17 +118,16 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.38
---- !u!114 &8478825046518539371
+--- !u!114 &8327256893917535526
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8478825046518539408}
+  m_GameObject: {fileID: 8327256893917535709}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3c957b1d52144728f90b74aaecccaf8, type: 3}
+  m_Script: {fileID: 11500000, guid: 78d88a8cd60042fdbd573c3b7ddb2dd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objective: {fileID: 11400000, guid: e7a49b79cd23c3349b6b6023f5ec1405, type: 2}
-  completedSprite: {fileID: 21300000, guid: 4c890a3e49f9f8c4e9da8f0abc87b36f, type: 3}
+  delay: 1
