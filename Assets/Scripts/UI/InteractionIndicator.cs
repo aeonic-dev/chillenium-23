@@ -29,7 +29,7 @@ namespace UI {
 
         private void ShowInstance(Vector3 position) {
             _target = position + offset;
-            transform.position = _target + offset;
+            transform.position = _target + offset * .5f;
             StartCoroutine(FadeIn());
         }
 
