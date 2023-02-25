@@ -154,10 +154,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveDeadzone: 0.2
-  moveSpeed: 15
+  moveSpeed: 6
   moveAcceleration: 0.3
   moveDecelerationMultiplier: 0.95
-  jumpForce: 16
+  jumpForce: 15
   jumpGracePeriod: 0.1
   groundDistance: 0.5
 --- !u!61 &7623703029318248111
