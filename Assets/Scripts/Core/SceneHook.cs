@@ -5,17 +5,20 @@ using Util;
 
 namespace Core {
     public class SceneHook : MonoBehaviour {
-        public SceneReference hubScene;
-        
+        private static SceneHook _instance;
         private Objective _queuedObjective;
+
+        public static SceneHook Get() {
+            return _instance;
+        }
         
         public void QueueStartLevel(Objective objective) {
             _queuedObjective = objective;
             objective.scene.LoadScene(LoadSceneMode.Additive);
         }
 
-        public static SceneHook Get() {
-            return FindObjectOfType<SceneHook>();
+        private void Awake() {
+            _instance = this;
         }
         
         private void Update() {
