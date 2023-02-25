@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd03aeb1900244e99d01b830a37dbc4c, type: 3}
-  m_Name: Dog
+  m_Name: Journal
   m_EditorClassIdentifier: 
-  objectiveName: Fluffy
+  objectiveName: Journal
   timer: 30
   scene:
     sceneAsset: {fileID: 102900000, guid: 533195a5ee983b149ab2e70957620ede, type: 3}
