@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd03aeb1900244e99d01b830a37dbc4c, type: 3}
-  m_Name: Test Dog Objective
+  m_Name: Dog
   m_EditorClassIdentifier: 
   objectiveName: Fluffy
   timer: 60
