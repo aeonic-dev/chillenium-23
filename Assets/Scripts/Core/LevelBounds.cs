@@ -4,7 +4,7 @@ namespace Core {
     /// <summary>
     /// Simple camera bounding box that exists in every level.
     /// </summary>
-    public class CameraBounds : MonoBehaviour {
+    public class LevelBounds : MonoBehaviour {
         [Tooltip("The point furthest to the left and down that the camera will ever see.")]
         public Vector2 bottomLeft;
         [Tooltip("The point furthest to the right and up that the camera will ever see.")]
