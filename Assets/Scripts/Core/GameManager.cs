@@ -66,8 +66,6 @@ namespace Core {
         }
         
         public static void StartLevel(Objective objective) {
-            if (GameState == GameState.Level) return;
-            
             _currentObjective = objective;
             GameState = GameState.Level;
             _returnScene = SceneManager.GetActiveScene().path;

@@ -73,8 +73,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2019765923
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 93b998dd2a0c5e549b540e44bba2f643, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1.5
-  amplitude: 0.02
+  amplitude: 0.0004
   exponent: 1
 --- !u!58 &8478825046518539372
 CircleCollider2D:
@@ -132,4 +132,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objective: {fileID: 11400000, guid: 649615d7531223646a4dddd9af6ac284, type: 2}
   completedSprite: {fileID: 21300000, guid: 4c890a3e49f9f8c4e9da8f0abc87b36f, type: 3}
+  delay: 0
+  onInteract:
+    m_PersistentCalls:
+      m_Calls: []
   isComplete: 0

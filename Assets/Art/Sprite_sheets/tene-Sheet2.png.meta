@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 51ada00e64f89844f87eac84652486b3
+guid: a04a28b7221658b4ab7c36ef967ebdbd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -104,7 +104,28 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tene-anim-Sheet_0
+      name: tene-Sheet2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cceac6420979d9a479e6f4d3afd80099
+      internalID: 760757301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tene-Sheet2_1
       rect:
         serializedVersion: 2
         x: 64
@@ -118,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16a6995996e28984ebad7f5ce0c5cf73
-      internalID: 1135583244
+      spriteID: 0f22f668542ff464db57738fbf23ba10
+      internalID: -722341209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tene-anim-Sheet_1
+      name: tene-Sheet2_2
       rect:
         serializedVersion: 2
         x: 128
@@ -139,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25ef9a057442dda4fa3bd4196aad0607
-      internalID: 1578916040
+      spriteID: 090742fcd3f16fa4595e22da42368351
+      internalID: 471940808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tene-anim-Sheet_2
+      name: tene-Sheet2_3
       rect:
         serializedVersion: 2
         x: 192
@@ -160,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00c00d561dd71494faedf06340487d9b
-      internalID: 1862415118
+      spriteID: 8716f1708b804c2469d988690da49c65
+      internalID: -359537938
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tene-anim-Sheet_3
+      name: tene-Sheet2_4
       rect:
         serializedVersion: 2
         x: 256
@@ -181,14 +202,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bdddfe72223e3b4e901c96a2bd05ca2
-      internalID: 511444339
+      spriteID: 8e671ece57ea327418d1cb9a694b7573
+      internalID: 927790126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tene-anim-Sheet_4
+      name: tene-Sheet2_5
       rect:
         serializedVersion: 2
         x: 320
@@ -202,8 +223,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76bdffa024091684cadb7004d707b394
-      internalID: 128877832
+      spriteID: 51171c733267bf9458453669dc713df0
+      internalID: -988340466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tene-Sheet2_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d507d5753e3aa8246b02aad8e790e08a
+      internalID: 1819453994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tene-Sheet2_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 539af6fce3e40374795bbaa9610221e8
+      internalID: 429469138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tene-Sheet2_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b66d4094de2efbe4b902714b2307b574
+      internalID: 219785279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tene-Sheet2_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d42167d8b0f18a4f901342f3e278057
+      internalID: 463892948
       vertices: []
       indices: 
       edges: []
@@ -219,11 +324,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      tene-anim-Sheet_3: 511444339
-      tene-anim-Sheet_4: 128877832
-      tene-anim-Sheet_2: 1862415118
-      tene-anim-Sheet_0: 1135583244
-      tene-anim-Sheet_1: 1578916040
+      tene-Sheet2_2: 471940808
+      tene-Sheet2_6: 1819453994
+      tene-Sheet2_1: -722341209
+      tene-Sheet2_3: -359537938
+      tene-Sheet2_9: 463892948
+      tene-Sheet2_0: 760757301
+      tene-Sheet2_8: 219785279
+      tene-Sheet2_5: -988340466
+      tene-Sheet2_4: 927790126
+      tene-Sheet2_7: 429469138
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
