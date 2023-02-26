@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Gameboy
   m_EditorClassIdentifier: 
   objectiveName: Gameboy
-  timer: 30
+  timer: 15
   delay: 1
-  direction: 0
+  direction: 1
   scene:
     sceneAsset: {fileID: 102900000, guid: 3930e974ba075f543ac00b44e942e259, type: 3}
     scenePath: Assets/Scenes/Past_Level_1.unity
