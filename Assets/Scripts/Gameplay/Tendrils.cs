@@ -4,12 +4,14 @@ using UnityEngine;
 
 namespace Gameplay {
     
-    //     (\,/)
-    //     oo   '''//,        _
-    //   ,/_;~,        \,    / '
-    //   "'   \    (    \    !
-    //         ',|  \    |__.'
-    //         '~  '~----''
+/*
+        (\,/)
+      oo   '''//,        _
+    ,/_;~,        \,    / '
+    "'   \    (    \    !
+          ',|  \    |__.'
+          '~  '~----''
+*/
     
     public class Tendrils : MonoBehaviour {
         public GameObject tendrilSectionPrefab;
