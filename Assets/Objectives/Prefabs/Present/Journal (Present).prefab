@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1.5
-  amplitude: 0.02
+  amplitude: 0.0002
   exponent: 1
 --- !u!58 &8478825046518539372
 CircleCollider2D:
@@ -132,4 +132,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objective: {fileID: 11400000, guid: 9b17be24604440a4fab7d51526600c1a, type: 2}
   completedSprite: {fileID: 21300000, guid: be8222aaea50da945a32534a32714c7e, type: 3}
+  delay: 0
+  onInteract:
+    m_PersistentCalls:
+      m_Calls: []
   isComplete: 0
