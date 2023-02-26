@@ -190,6 +190,7 @@ GameObject:
   - component: {fileID: 7623703029318248109}
   - component: {fileID: 7623703029318248111}
   - component: {fileID: 537036292533626889}
+  - component: {fileID: 3759416300350072225}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -250,9 +251,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1608618667
-  m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingLayerID: 2019765923
+  m_SortingLayer: 2
+  m_SortingOrder: 32767
   m_Sprite: {fileID: -419190605, guid: f9bb30ffc109eeb469d04ffe9f284ab5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -317,7 +318,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.000009536743, y: -0.1157074}
+  m_Offset: {x: 0.000009536743, y: -0.11483133}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -328,7 +329,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.24612045, y: 0.76507425}
+  m_Size: {x: 0.24612045, y: 0.7633221}
   m_EdgeRadius: 0.002
 --- !u!61 &537036292533626889
 BoxCollider2D:
@@ -343,7 +344,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0003376007, y: -0.11709398}
+  m_Offset: {x: 0.0003376007, y: -0.11551684}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -354,8 +355,28 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.268, y: 0.76097023}
+  m_Size: {x: 0.268, y: 0.75781596}
   m_EdgeRadius: 0
+--- !u!95 &3759416300350072225
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7623703029318248104}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e2ad829e11b29684997d72e7c36746df, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7623703029809385505
 GameObject:
   m_ObjectHideFlags: 0
