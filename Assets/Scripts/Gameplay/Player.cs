@@ -82,7 +82,19 @@ namespace Gameplay {
             _spriteRenderer = GetComponent<SpriteRenderer>();
             _animator = GetComponent<Animator>();
         }
-        
+
+        private void FixedUpdate() {
+            float xInput = Input.GetAxisRaw("Horizontal");
+            if (Mathf.Abs(xInput) > moveDeadzone) {
+                if (Mathf.Abs(_rigidbody.velocity.x) < moveSpeed)
+                    _rigidbody.AddForce(Vector2.right * (xInput * moveAcceleration), ForceMode2D.Impulse);
+            } else {
+                _rigidbody.velocity *= new Vector2(moveDecelerationMultiplier, 1);
+            }
+            
+            if (xInput != 0) _spriteRenderer.flipX = xInput > 0;
+        }
+
         private void Update() {
             if (IsGrounded()) _groundTimer = 0;
             _groundTimer += Time.deltaTime;
@@ -110,14 +122,6 @@ namespace Gameplay {
                     _jumpQueueTimer = 0;
                 }
             }
-            
-            float xInput = Input.GetAxisRaw("Horizontal");
-            if (Mathf.Abs(xInput) > moveDeadzone) {
-                if (Mathf.Abs(_rigidbody.velocity.x) < moveSpeed)
-                    _rigidbody.AddForce(Vector2.right * xInput * moveAcceleration, ForceMode2D.Impulse);
-            } else {
-                _rigidbody.velocity *= new Vector2(moveDecelerationMultiplier, 1);
-            }
 
             if (_hoveredInteraction != null && !_hoveredInteraction.IsInteractable()) _hoveredInteraction = null;
             if (_hoveredInteraction != null && Input.GetButtonDown("Interact")) {
@@ -125,8 +129,6 @@ namespace Gameplay {
                 _animator.SetTrigger("Interact");
                 Invoke(nameof(ResetInteractTrigger), .5f);
             }
-            
-            if (xInput != 0) _spriteRenderer.flipX = xInput > 0;
         }
 
         private void ResetInteractTrigger() {
