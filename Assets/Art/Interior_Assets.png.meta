@@ -1,0 +1,1127 @@
+fileFormatVersion: 2
+guid: 51e04be78bf5916419cc12ad3b4f1696
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Prop_Many_Books_Past
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 448
+        width: 51
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a581ccc3e1d29f74e8d874efe19b6178
+      internalID: -954702476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Counter_Past
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 576
+        width: 98
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c6f72cca5ccb04a8bf94a969dfc9f9
+      internalID: -1164542619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Sink_Present
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 54
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7284b48f0d243a4795f15d3ac9840f2
+      internalID: -255451947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Assets_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ce72cef91c1b294e90ec3355315cf8b
+      internalID: 408516074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Stairs_Present
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 61
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b1bf950bc913144c96ad718905a88ac
+      internalID: -776567323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Assets_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c0bbe4c837eb0842937d064b490c1d7
+      internalID: 786337041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Fridge_Past
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 256
+        width: 62
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 195ff16d96c49c3409e643245968c94f
+      internalID: -564888655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Assets_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b012c8b335ea4f46ab4c1f13b243dde
+      internalID: -739039457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Assets_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94833fbe637c66e45be0b22da0b17287
+      internalID: -1968547049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Assets_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e4ebe008a138344886fca7147551474
+      internalID: 766638313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Bed_Green_Past
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 576
+        width: 120
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa696e523a00172439d09ac4dadee88d
+      internalID: 2636843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Past_Bookshelf
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 64
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84638b00c3692bb4082a246e88bcb5c0
+      internalID: 1444241340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Chest_Past
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 110
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6dee202ffc06ed43b93a531531a7cf9
+      internalID: 384285467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Assets_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 340dc094996c64745b6aff96a239be70
+      internalID: 597789091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Assets_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9491f7abf0b110f478510d8ff0d0345f
+      internalID: 667345270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Assets_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a89af05927f365d4f8df747fe23e976f
+      internalID: -845160919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Assets_15
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdd50cc90325c504faea706b8087a2a0
+      internalID: -535285846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Bed_Past_Lower
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 511
+        width: 128
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65634c9bb32608542bcad47c9378d58b
+      internalID: -1746454194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Assets_19
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8f8352fcd1bef419a8b902b0f55cbc
+      internalID: 1278044202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Door_Past
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 59
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c28c2eb43ea78ba408abb70163e8a186
+      internalID: 225765249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_TV_Past
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 42
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 980bf58f005cd3b4186999f237e912ef
+      internalID: -1502501309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Couch_Past
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 256
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c31519f00dae564b88f17298b07ed62
+      internalID: 353462007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Books_Past_Side
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 448
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d933b286ab6b656469b26bdceb19bad2
+      internalID: -1727085821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Door_Present
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 29
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2fa5928047805244ba6b8357aab7de3
+      internalID: 1565787190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_TV_Present
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63984a97ee19bf841a3fcf5526bf0601
+      internalID: 552720844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Couch_Present
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 384
+        width: 120
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50506cc111c2b1d4c8d89a4355ad3eaf
+      internalID: -18247623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Stairs_Past
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 120
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8056a1f2f6367840b08f8ff6ad4915e
+      internalID: -1201474378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Sink_Past
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 320
+        width: 98
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e886c1f849370740af1c900f6484ae5
+      internalID: -652880973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Fridge_small
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 320
+        width: 36
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa25d73182af99418bd9cfa638d6e90
+      internalID: 1651889619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Books_Present
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 320
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4b31aed5ec006744b18af57526c5f34
+      internalID: -130334547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Books_Past
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 320
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e49956e4dc7e0e4cb14bc455f351963
+      internalID: -1048119928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Table_Present
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 98
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3039ea890df1ed4458953adf92c59ae4
+      internalID: 2054159007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Chair_Present
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6519019081d2aee418711c368c636e26
+      internalID: 1025415563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Toilet_Pas
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e507ae196215b44e88472741695b094
+      internalID: -378327661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Toilet_Past
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716e00de690b76d4dbc7b8a9cdabb5ee
+      internalID: -486426616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Tub_Present
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 64
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ff12f554dc757f4da0cf0a749065218
+      internalID: -1532082446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Tub
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 193
+        width: 128
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3fbcc45dc0ac324cba973e529d6289e
+      internalID: -519190912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Table_Past
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 164
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71d7650e7be55404a9e21f82b8a0e4c1
+      internalID: 1989134069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Chair_Past
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 41
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 191dc695e7f716542906e059d8758fef
+      internalID: 1457215068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Shelf_Long_Small
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 64
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2907e361b2dd59c459aeb523c1c6e38c
+      internalID: 750706020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Shelf_Small
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 48
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de56a97e1f7e67f48a3b6b8ccff864db
+      internalID: -80641780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Shelf
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 192
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff42ca6ae964eac4fb7430c2458bfab4
+      internalID: 680071914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prop_Shelf_Short
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 144
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1b5d964d640df46982ce1e5d008f27
+      internalID: 1758010903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Interior_Assets_44: -940689764
+      Interior_Assets_53: 1222972055
+      Interior_Assets_61: 44806073
+      Interior_Assets_49: 1043385012
+      Prop_Door_Present: 1565787190
+      Prop_Couch_Present: -18247623
+      Interior_Assets_77: -1411584602
+      Interior_Assets_36: 1716179886
+      Interior_Assets_12: 597789091
+      Prop_Table_Past: 1989134069
+      Interior_Assets_19: 1278044202
+      Interior_Assets_18: 1171515864
+      Interior_Assets_64: 87982321
+      Interior_Assets_15: -535285846
+      Interior_Assets_1: -1968547049
+      Interior_Assets_35: -1858594675
+      Interior_Assets_51: 2092444487
+      Interior_Assets_24: 942715260
+      Prop_Sink_Present: -255451947
+      Prop_Sink_Past: -652880973
+      Prop_Bed_Green_Past: 2636843
+      Interior_Assets_68: -1086868728
+      Interior_Assets_7: 408516074
+      Interior_Assets_67: 1582652956
+      Prop_Toilet_Pas: -378327661
+      Prop_TV_Past: -1502501309
+      Interior_Assets_9: 786337041
+      Prop_Chest_Past: 384285467
+      Prop_Shelf_Long_Small: 750706020
+      Prop_Shelf_Small: -80641780
+      Prop_Toilet_Past: -486426616
+      Prop_Counter_Past: -1164542619
+      Interior_Assets_74: 1586490709
+      Interior_Assets_41: 77761564
+      Interior_Assets_17: -133074312
+      Prop_TV_Present: 552720844
+      Interior_Assets_13: 667345270
+      Prop_Books_Present: -130334547
+      Interior_Assets_6: 2096345653
+      Interior_Assets_21: 1618924792
+      Prop_Couch_Past: 353462007
+      Interior_Assets_76: -724344586
+      Prop_Bed_Past_Lower: -1746454194
+      Prop_Chair_Past: 1457215068
+      Prop_Door_Past: 225765249
+      Prop_Table_Present: 2054159007
+      Interior_Assets_0: -739039457
+      Prop_Stairs_Past: -1201474378
+      Interior_Assets_55: 688859671
+      Interior_Assets_65: 10096950
+      Prop_Shelf_Short: 1758010903
+      Interior_Assets_73: -1362640185
+      Interior_Assets_4: -798887228
+      Interior_Assets_33: 1229325484
+      Interior_Assets_63: -1539526269
+      Interior_Assets_26: -1901535765
+      Interior_Assets_50: 1587393369
+      Prop_Past_Bookshelf: 1444241340
+      Interior_Assets_11: 1276743265
+      Interior_Assets_34: 284652761
+      Interior_Assets_56: -1538287024
+      Interior_Assets_29: -2145484814
+      Prop_Books_Past_Side: -1727085821
+      Interior_Assets_38: -272525913
+      Prop_Stairs_Present: -776567323
+      Interior_Assets_25: -1234558302
+      Prop_Fridge_small: 1651889619
+      Interior_Assets_2: 766638313
+      Interior_Assets_57: 716477671
+      Prop_Many_Books_Past: -954702476
+      Prop_Tub_Present: -1532082446
+      Prop_Shelf: 680071914
+      Interior_Assets_31: -1874706817
+      Prop_Fridge_Past: -564888655
+      Props_Books_Past: -1048119928
+      Prop_Chair_Present: 1025415563
+      Interior_Assets_14: -845160919
+      Prop_Tub: -519190912
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
