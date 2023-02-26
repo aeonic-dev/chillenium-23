@@ -1986,7 +1986,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b16c0b2f4c2416c89e261c4475ca511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: {x: 0.24, y: 2.63, z: 0}
+  position: {x: -0.24, y: 2.63, z: 0}
 --- !u!1 &291038875
 GameObject:
   m_ObjectHideFlags: 0
@@ -3149,7 +3149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b16c0b2f4c2416c89e261c4475ca511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: {x: -0.2, y: -1.36, z: 0}
+  position: {x: -0.55, y: -1.36, z: 0}
 --- !u!61 &692500015
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4614,6 +4614,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 537036292533626889, guid: 16151a96bdd9323488f9d5cbbfdff794, type: 3}
+      propertyPath: m_Size.x
+      value: 0.37275553
+      objectReference: {fileID: 0}
+    - target: {fileID: 537036292533626889, guid: 16151a96bdd9323488f9d5cbbfdff794, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9236789
+      objectReference: {fileID: 0}
+    - target: {fileID: 537036292533626889, guid: 16151a96bdd9323488f9d5cbbfdff794, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 537036292533626889, guid: 16151a96bdd9323488f9d5cbbfdff794, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.05795312
+      objectReference: {fileID: 0}
+    - target: {fileID: 537036292533626889, guid: 16151a96bdd9323488f9d5cbbfdff794, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.006396532
+      objectReference: {fileID: 0}
+    - target: {fileID: 3759416300350072225, guid: 16151a96bdd9323488f9d5cbbfdff794, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 977dc2af0850eaa49ac1be9de2fcd051, type: 2}
     - target: {fileID: 7623703028990190044, guid: 16151a96bdd9323488f9d5cbbfdff794, type: 3}
       propertyPath: m_Name
       value: Setup
@@ -4680,7 +4704,7 @@ PrefabInstance:
       objectReference: {fileID: -725922497, guid: 853a8e09ad8300a4b856504bceeed4b4, type: 3}
     - target: {fileID: 7623703029318248109, guid: 16151a96bdd9323488f9d5cbbfdff794, type: 3}
       propertyPath: jumpForce
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7623703029318248109, guid: 16151a96bdd9323488f9d5cbbfdff794, type: 3}
       propertyPath: moveSpeed
@@ -4906,7 +4930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b16c0b2f4c2416c89e261c4475ca511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: {x: -0.38, y: -1.85, z: 0}
+  position: {x: -0.77, y: -1.85, z: 0}
 --- !u!61 &1116975177
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6241,9 +6265,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 2019765923
-  m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingLayerID: 587549171
+  m_SortingLayer: 1
+  m_SortingOrder: 1
   m_Sprite: {fileID: 1452820307, guid: f8239fb48e811014681d83f4e76298bb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6720,7 +6744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b16c0b2f4c2416c89e261c4475ca511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: {x: 0.24, y: 2.15, z: 0}
+  position: {x: 0.39, y: 2.15, z: 0}
 --- !u!61 &1421031833
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20841,9 +20865,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 2019765923
-  m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingLayerID: 587549171
+  m_SortingLayer: 1
+  m_SortingOrder: 1
   m_Sprite: {fileID: 1452820307, guid: f8239fb48e811014681d83f4e76298bb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -20984,7 +21008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b16c0b2f4c2416c89e261c4475ca511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: {x: -0.2, y: -1.35, z: 0}
+  position: {x: -0.77, y: -1.35, z: 0}
 --- !u!61 &1833912220
 BoxCollider2D:
   m_ObjectHideFlags: 0
