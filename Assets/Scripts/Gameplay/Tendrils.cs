@@ -32,20 +32,21 @@ namespace Gameplay {
             _objective = objective;
             _start = LevelBounds.Get().bottomLeft;
             _end = new Vector3(LevelBounds.Get().topRight.x + 1, _start.y);
-
             _timer = 0;
 
             int count = Mathf.FloorToInt((LevelBounds.Get().topRight.y - _start.y) / 2) + 1;
             for (int i = 0; i < count; i++) {
                 var section = Instantiate(tendrilSectionPrefab, transform);
-                section.transform.position = _start + new Vector3(0, i * 2, 0);
+                section.transform.localPosition = Vector3.up * i * 2; //new Vector3(0, i * 2, 0);
             }
 
             if (_objective.direction == Direction.RightToLeft) {
-                transform.Rotate(Vector3.forward, 180);
+                transform.RotateAround(_start, Vector3.forward, 180);
                 _start += Vector3.up * count * 2;
                 _end += Vector3.up * count * 2;
             }
+            
+            transform.position = _start;
         }
         
         private void Awake() {
