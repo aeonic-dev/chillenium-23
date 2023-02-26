@@ -173,7 +173,6 @@ Transform:
   - {fileID: 7623703029318248106}
   - {fileID: 7623703029809385509}
   - {fileID: 2367415138665384783}
-  - {fileID: 9197642214570969159}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -424,10 +423,10 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.208901
+    x: 0
     y: 0
-    width: 0.58128977
-    height: 1
+    width: 16
+    height: 9
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34

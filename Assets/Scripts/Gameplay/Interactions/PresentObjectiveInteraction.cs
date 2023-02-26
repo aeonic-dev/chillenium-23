@@ -1,4 +1,5 @@
 ﻿using Core;
+using UI;
 using UnityEngine;
 using UnityEngine.Events;
 using Util;
@@ -19,6 +20,7 @@ namespace Gameplay.Interactions {
         }
         
         public override void Interact() {
+            ObjectivesUI.Get().PutLeft();
             onInteract.Invoke();
             Invoke(nameof(StartLevel), delay);
         }
