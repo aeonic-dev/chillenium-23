@@ -1,4 +1,5 @@
 ﻿using Core;
+using UI;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -12,6 +13,7 @@ namespace Gameplay.Interactions {
         
         public override void Interact() {
             if (GameManager.GameState == GameState.Level) {
+                ObjectivesUI.Get().PutRight();
                 _completed = true;
                 onInteract.Invoke();
                 Invoke(nameof(CompleteLevel), delay);

@@ -19,19 +19,27 @@ namespace Gameplay {
         [Header("Jumping")]
         [Tooltip("Magnitude of jumping force")]
         public float jumpForce = 2f;
-        [Tooltip("Time in seconds the player can jump after leaving the ground")]
+        [Tooltip("Time in seconds the player can jump after leaving the ground or before touching it.")]
         public float jumpGracePeriod = .05f;
+        [Tooltip("A cooldown for jumping to avoid cheaty double jumps")]
+        public float jumpCooldown = .05f;
         [Tooltip("Distance from the player's origin to the ground at which the player is considered grounded")]
         public float groundDistance = .5f;
+        [Tooltip("Threshold for the ground distance at which the player is considered grounded")]
+        public float groundThreshold = .1f;
         
         private static Player _instance;
 
         private Transform _transform;
         private Rigidbody2D _rigidbody;
+        private CapsuleCollider2D _capsuleCollider;
         private SpriteRenderer _spriteRenderer;
         private Animator _animator;
         private Interaction _hoveredInteraction;
         private float _groundTimer;
+        private float _jumpTimer;
+        private float _jumpQueueTimer;
+        private bool _jumpQueued;
 
         public static Player Get() {
             if (_instance.IsDestroyed()) return FindObjectOfType<Player>();
@@ -43,7 +51,7 @@ namespace Gameplay {
         }
 
         private bool IsGrounded() {
-            RaycastHit2D hit = Physics2D.BoxCast(_transform.position, Vector2.one, 0, Vector2.down, groundDistance);
+            RaycastHit2D hit = Physics2D.Raycast(_transform.position - Vector3.up * groundDistance, Vector2.down, groundThreshold);
             return hit.collider != null;
         }
 
@@ -70,6 +78,7 @@ namespace Gameplay {
         private void Start() {
             _transform = transform;
             _rigidbody = GetComponent<Rigidbody2D>();
+            _capsuleCollider = GetComponent<CapsuleCollider2D>();
             _spriteRenderer = GetComponent<SpriteRenderer>();
             _animator = GetComponent<Animator>();
         }
@@ -77,10 +86,29 @@ namespace Gameplay {
         private void Update() {
             if (IsGrounded()) _groundTimer = 0;
             _groundTimer += Time.deltaTime;
+            _jumpTimer += Time.deltaTime;
+            _jumpQueueTimer += Time.deltaTime;
 
-            if (CanJump() && Input.GetButtonDown("Jump")) {
-                _groundTimer = jumpGracePeriod + 1;
-                _rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            if (_jumpQueued) {
+                if (_jumpQueueTimer > jumpGracePeriod) _jumpQueued = false;
+                else if (CanJump()) {
+                    _jumpQueued = false;
+                    _jumpTimer = 0;
+                    _groundTimer = jumpGracePeriod + 1;
+                    _rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                }
+            } else if (Input.GetButtonDown("Jump")) {
+                if (CanJump()) {
+                    if (_jumpTimer > jumpCooldown) {
+                        _jumpQueued = false;
+                        _jumpTimer = 0;
+                        _groundTimer = jumpGracePeriod + 1;
+                        _rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                    }
+                } else {
+                    _jumpQueued = true;
+                    _jumpQueueTimer = 0;
+                }
             }
             
             float xInput = Input.GetAxisRaw("Horizontal");
@@ -97,6 +125,8 @@ namespace Gameplay {
                 _animator.SetTrigger("Interact");
                 Invoke(nameof(ResetInteractTrigger), .5f);
             }
+            
+            if (xInput != 0) _spriteRenderer.flipX = xInput > 0;
         }
 
         private void ResetInteractTrigger() {
@@ -105,9 +135,8 @@ namespace Gameplay {
 
         private void LateUpdate() {
             float xVel = _rigidbody.velocity.x;
-            if (xVel != 0) _spriteRenderer.flipX = xVel > 0;
             _animator.SetFloat("Speed", Mathf.Abs(xVel / moveSpeed));
-            _animator.SetBool("Jumping", !IsGrounded());
+            _animator.SetBool("Jumping", !IsGrounded() && Mathf.Abs(_rigidbody.velocity.y) > .1f);
         }
     }
-}   
+}
