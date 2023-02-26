@@ -1886,34 +1886,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1706122293999386278, guid: 16151a96bdd9323488f9d5cbbfdff794, type: 3}
-      propertyPath: offset.y
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1706122293999386278, guid: 16151a96bdd9323488f9d5cbbfdff794, type: 3}
-      propertyPath: keyboardSprite
-      value: 
-      objectReference: {fileID: 436783047, guid: 650f68295ed988d43b6a1ea019e46a50, type: 3}
-    - target: {fileID: 1706122293999386278, guid: 16151a96bdd9323488f9d5cbbfdff794, type: 3}
-      propertyPath: xboxLikeSprite
-      value: 
-      objectReference: {fileID: -1900482, guid: 650f68295ed988d43b6a1ea019e46a50, type: 3}
-    - target: {fileID: 1706122293999386278, guid: 16151a96bdd9323488f9d5cbbfdff794, type: 3}
-      propertyPath: dualshockSprite
-      value: 
-      objectReference: {fileID: 703327018, guid: 650f68295ed988d43b6a1ea019e46a50, type: 3}
-    - target: {fileID: 2574128505935554665, guid: 16151a96bdd9323488f9d5cbbfdff794, type: 3}
-      propertyPath: m_SortingLayer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2574128505935554665, guid: 16151a96bdd9323488f9d5cbbfdff794, type: 3}
-      propertyPath: m_SortingOrder
-      value: 9999
-      objectReference: {fileID: 0}
-    - target: {fileID: 2574128505935554665, guid: 16151a96bdd9323488f9d5cbbfdff794, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1608618667
-      objectReference: {fileID: 0}
     - target: {fileID: 7623703028990190044, guid: 16151a96bdd9323488f9d5cbbfdff794, type: 3}
       propertyPath: m_Name
       value: Setup
