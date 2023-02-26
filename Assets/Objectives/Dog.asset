@@ -17,5 +17,5 @@ MonoBehaviour:
   delay: 1
   direction: 0
   scene:
-    sceneAsset: {fileID: 102900000, guid: 533195a5ee983b149ab2e70957620ede, type: 3}
-    scenePath: Assets/Scenes/Testing/TestLevel.unity
+    sceneAsset: {fileID: 102900000, guid: f16c077926e45f34eb29fadbd7644831, type: 3}
+    scenePath: Assets/Scenes/Past_Level_4.unity
