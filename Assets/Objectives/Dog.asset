@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dog
   m_EditorClassIdentifier: 
   objectiveName: Fluffy
-  timer: 30
+  timer: 15
   delay: 1
   direction: 0
   scene:
