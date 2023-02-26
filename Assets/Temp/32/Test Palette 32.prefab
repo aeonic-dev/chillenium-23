@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2252561222946313182}
   - component: {fileID: 2048252734589523125}
   m_Layer: 0
-  m_Name: Test Palette
+  m_Name: Test Palette 32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110,12 +110,12 @@ Tilemap:
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: fd664ca7f530e47439fe472c267361eb, type: 2}
+    m_Data: {fileID: 11400000, guid: 4c40bbac42e071645a660e5a3c27c314, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 62ce3f1a726862247b67ec26470a252b, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
-    m_Data: {fileID: -29682503, guid: 34687308236bbfc4ebfa7489fa94ad5f, type: 3}
+    m_Data: {fileID: -1560597904, guid: b2d3a1a3e52bba443b9829592cf38b1d, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -2131856974, guid: 97b163a3fb0d78f4796d2952dedab05f, type: 3}
   m_TileMatrixArray:
@@ -213,7 +213,7 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
---- !u!114 &1100412023566270551
+--- !u!114 &3936009683083171105
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
