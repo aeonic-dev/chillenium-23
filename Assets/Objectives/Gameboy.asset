@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Gameboy
   m_EditorClassIdentifier: 
   objectiveName: Gameboy
-  timer: 15
+  timer: 30
   delay: 1
   direction: 0
   scene:

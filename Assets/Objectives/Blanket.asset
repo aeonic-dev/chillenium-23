@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Blanket
   m_EditorClassIdentifier: 
   objectiveName: Blanket
-  timer: 15
+  timer: 30
   delay: 1
   direction: 1
   scene:
