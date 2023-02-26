@@ -4960,6 +4960,14 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7623703029318248109, guid: 16151a96bdd9323488f9d5cbbfdff794, type: 3}
+      propertyPath: moveAcceleration
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7623703029318248109, guid: 16151a96bdd9323488f9d5cbbfdff794, type: 3}
+      propertyPath: moveDecelerationMultiplier
+      value: 0.99
+      objectReference: {fileID: 0}
     - target: {fileID: 7623703029318248111, guid: 16151a96bdd9323488f9d5cbbfdff794, type: 3}
       propertyPath: m_Size.x
       value: 0.29664636
