@@ -1,20 +1,51 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using Gameplay;
 using Gameplay.Interactions;
 using UI;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.LowLevel;
 using UnityEngine.SceneManagement;
+using Object = UnityEngine.Object;
 
 namespace Core {
     public class GameManager {
-        public static GameState GameState = GameState.Menu;
+        public static GameState GameState = GameState.Hub;
         public static Objective CurrentObjective => GameState == GameState.Level ? _currentObjective : null;
-        public static ControlType ControlType = ControlType.Keyboard;
+
+        public static ControlType ControlType {
+            get => _controlType;
+            set {
+                OnControlTypeChange.Invoke(value);
+                _controlType = value;
+            }
+        }
+
+        public static Action<ControlType> OnControlTypeChange = (type) => { };
 
         private static string _returnScene;
         private static Objective _currentObjective;
         private static HubState _hubState = HubState.Empty;
+        private static ControlType _controlType = ControlType.Keyboard;
+        private static bool _initialized;
+
+        public static void Bootstrap() {
+            if (_initialized) return;
+            _initialized = true;
+            
+            InputSystem.onEvent += OnInputEvent;
+        }
+
+        private static void OnInputEvent(InputEventPtr ptr, InputDevice device) {
+            string name = device.displayName.ToLower();
+            Debug.Log(device.description.deviceClass.ToLower());
+
+            if (name.Contains("xbox") || name.Contains("stadia") || device.description.deviceClass.ToLower().Contains("gamepad")) ControlType = ControlType.XboxLike;   
+            else ControlType = ControlType.Keyboard;
+        }
 
         public static void CompleteLevel() {
             SceneManager.LoadScene(_returnScene);

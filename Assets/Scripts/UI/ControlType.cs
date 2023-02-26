@@ -1,6 +1,6 @@
 ﻿namespace UI {
     public enum ControlType {
-        XInput,
+        XboxLike,
         Dualshock,
         Keyboard
     }

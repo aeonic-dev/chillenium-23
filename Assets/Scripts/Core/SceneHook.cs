@@ -20,6 +20,7 @@ namespace Core {
 
         private void Awake() {
             _instance = this;
+            GameManager.Bootstrap();
         }
     }
 }
