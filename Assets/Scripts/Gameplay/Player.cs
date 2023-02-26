@@ -1,4 +1,5 @@
-﻿using UI;
+﻿using System;
+using UI;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -27,6 +28,8 @@ namespace Gameplay {
 
         private Transform _transform;
         private Rigidbody2D _rigidbody;
+        private SpriteRenderer _spriteRenderer;
+        private Animator _animator;
         private Interaction _hoveredInteraction;
         private float _groundTimer;
 
@@ -67,6 +70,8 @@ namespace Gameplay {
         private void Start() {
             _transform = transform;
             _rigidbody = GetComponent<Rigidbody2D>();
+            _spriteRenderer = GetComponent<SpriteRenderer>();
+            _animator = GetComponent<Animator>();
         }
         
         private void Update() {
@@ -89,7 +94,20 @@ namespace Gameplay {
             if (_hoveredInteraction != null && !_hoveredInteraction.IsInteractable()) _hoveredInteraction = null;
             if (_hoveredInteraction != null && Input.GetButtonDown("Interact")) {
                 _hoveredInteraction.Interact();
+                _animator.SetTrigger("Interact");
+                Invoke(nameof(ResetInteractTrigger), .5f);
             }
+        }
+
+        private void ResetInteractTrigger() {
+            _animator.ResetTrigger("Interact");
+        }
+
+        private void LateUpdate() {
+            float xVel = _rigidbody.velocity.x;
+            if (xVel != 0) _spriteRenderer.flipX = xVel > 0;
+            _animator.SetFloat("Speed", Mathf.Abs(xVel / moveSpeed));
+            _animator.SetBool("Jumping", !IsGrounded());
         }
     }
 }   
