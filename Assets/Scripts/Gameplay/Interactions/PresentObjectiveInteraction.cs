@@ -1,5 +1,6 @@
 ﻿using Core;
 using UnityEngine;
+using UnityEngine.Events;
 using Util;
 
 namespace Gameplay.Interactions {
@@ -7,6 +8,8 @@ namespace Gameplay.Interactions {
     public class PresentObjectiveInteraction : Interaction {
         public Objective objective;
         public Sprite completedSprite;
+        public float delay;
+        public UnityEvent onInteract;
 
         private SpriteRenderer _renderer;
         [SerializeField] [ReadOnly] private bool isComplete;
@@ -16,6 +19,11 @@ namespace Gameplay.Interactions {
         }
         
         public override void Interact() {
+            onInteract.Invoke();
+            Invoke(nameof(StartLevel), delay);
+        }
+
+        private void StartLevel() {
             GameManager.StartLevel(objective);
         }
         

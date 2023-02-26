@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8478825046518539372}
   - component: {fileID: 8478825046518539371}
   m_Layer: 0
-  m_Name: Gameboy (Present)
+  m_Name: Journal (Present)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 2019765923
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 93b998dd2a0c5e549b540e44bba2f643, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 05366625c6764c948823d6a48bc0ef81, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -130,6 +130,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3c957b1d52144728f90b74aaecccaf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objective: {fileID: 11400000, guid: 649615d7531223646a4dddd9af6ac284, type: 2}
-  completedSprite: {fileID: 21300000, guid: 4c890a3e49f9f8c4e9da8f0abc87b36f, type: 3}
+  objective: {fileID: 11400000, guid: 9b17be24604440a4fab7d51526600c1a, type: 2}
+  completedSprite: {fileID: 21300000, guid: be8222aaea50da945a32534a32714c7e, type: 3}
   isComplete: 0
