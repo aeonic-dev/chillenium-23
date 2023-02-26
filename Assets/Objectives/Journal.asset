@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Journal
   m_EditorClassIdentifier: 
   objectiveName: Journal
-  timer: 30
+  timer: 15
   delay: 1
-  direction: 0
+  direction: 1
   scene:
     sceneAsset: {fileID: 102900000, guid: 64bd4ee958728f14781137e863b74106, type: 3}
     scenePath: Assets/Scenes/Past_Level_2.unity

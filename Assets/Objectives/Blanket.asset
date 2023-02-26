@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Blanket
   m_EditorClassIdentifier: 
   objectiveName: Blanket
-  timer: 30
+  timer: 15
   delay: 1
-  direction: 0
+  direction: 1
   scene:
     sceneAsset: {fileID: 102900000, guid: dc2d0cabbd4bada4f8f616c51d99f6ea, type: 3}
     scenePath: Assets/Scenes/Past_Level_3.unity

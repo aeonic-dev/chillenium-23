@@ -32,6 +32,7 @@ namespace Gameplay {
             _objective = objective;
             _start = LevelBounds.Get().bottomLeft;
             _end = new Vector3(LevelBounds.Get().topRight.x + 1, _start.y);
+
             _timer = 0;
 
             int count = Mathf.FloorToInt((LevelBounds.Get().topRight.y - _start.y) / 2) + 1;
