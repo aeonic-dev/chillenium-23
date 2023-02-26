@@ -525,6 +525,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8478825046518539374, guid: 2ffc557685521194590020a9c2952691, type: 3}
   m_PrefabInstance: {fileID: 45877562}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &50812643
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 929435186847770407, guid: 77d53ce4592d68c4e81cd1793e8689de, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 929435186847770407, guid: 77d53ce4592d68c4e81cd1793e8689de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.2146219
+      objectReference: {fileID: 0}
+    - target: {fileID: 929435186847770407, guid: 77d53ce4592d68c4e81cd1793e8689de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8014803
+      objectReference: {fileID: 0}
+    - target: {fileID: 929435186847770407, guid: 77d53ce4592d68c4e81cd1793e8689de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.015447007
+      objectReference: {fileID: 0}
+    - target: {fileID: 929435186847770407, guid: 77d53ce4592d68c4e81cd1793e8689de, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 929435186847770407, guid: 77d53ce4592d68c4e81cd1793e8689de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 929435186847770407, guid: 77d53ce4592d68c4e81cd1793e8689de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 929435186847770407, guid: 77d53ce4592d68c4e81cd1793e8689de, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 929435186847770407, guid: 77d53ce4592d68c4e81cd1793e8689de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 929435186847770407, guid: 77d53ce4592d68c4e81cd1793e8689de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 929435186847770407, guid: 77d53ce4592d68c4e81cd1793e8689de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1254249754310952655, guid: 77d53ce4592d68c4e81cd1793e8689de, type: 3}
+      propertyPath: m_Name
+      value: AdultBGMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 7975732873200162302, guid: 77d53ce4592d68c4e81cd1793e8689de, type: 3}
+      propertyPath: m_Volume
+      value: 0.25
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 77d53ce4592d68c4e81cd1793e8689de, type: 3}
 --- !u!1 &55110301
 GameObject:
   m_ObjectHideFlags: 0
