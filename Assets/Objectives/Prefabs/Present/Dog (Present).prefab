@@ -117,7 +117,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.38
+  m_Radius: 0.5
 --- !u!114 &8478825046518539371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,3 +132,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objective: {fileID: 11400000, guid: e7a49b79cd23c3349b6b6023f5ec1405, type: 2}
   completedSprite: {fileID: 21300000, guid: 408771e83d9f0fb44a3057d80a2b215a, type: 3}
+  isComplete: 0
