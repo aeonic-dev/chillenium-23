@@ -1,28 +1,26 @@
 ﻿using Gameplay;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using Util;
 
 namespace Core {
+    /// <summary>
+    /// Ended up not needing the implementation that was here but I'm leaving it in case we need to do something before
+    /// level loading later.
+    /// </summary>
     public class SceneHook : MonoBehaviour {
-        public SceneReference hubScene;
-        
-        private Objective _queuedObjective;
-        
-        public void QueueStartLevel(Objective objective) {
-            _queuedObjective = objective;
-            objective.scene.LoadScene(LoadSceneMode.Additive);
-        }
+        private static SceneHook _instance;
 
         public static SceneHook Get() {
-            return FindObjectOfType<SceneHook>();
+            return _instance;
         }
         
-        private void Update() {
-            if (_queuedObjective != null) {
-                GameManager.OnLevelLoaded(_queuedObjective);
-                _queuedObjective = null;
-            }
+        public void QueueStartLevel(Objective objective) {
+            objective.scene.LoadScene();
+        }
+
+        private void Awake() {
+            _instance = this;
+            GameManager.Bootstrap();
         }
     }
 }

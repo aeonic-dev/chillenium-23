@@ -8,7 +8,7 @@ namespace Util {
         public static void LoadScene(this SceneReference sceneReference, LoadSceneMode mode = LoadSceneMode.Single) =>
             SceneManager.LoadScene(sceneReference.ScenePath, mode);
 
-        public static void SetActiveScene(this SceneReference sceneReference) =>
+        public static bool SetActiveScene(this SceneReference sceneReference) =>
             SceneManager.SetActiveScene(sceneReference.GetScene());
     }
 }

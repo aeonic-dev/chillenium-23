@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
+using Core;
 using UnityEngine;
 
 namespace UI {
@@ -9,15 +11,13 @@ namespace UI {
         public float easingTime = .1f;
         public AnimationCurve easingCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
 
+        public Sprite keyboardSprite;
+        public Sprite dualshockSprite;
+        public Sprite xboxLikeSprite;
+
         private SpriteRenderer _renderer;
         private Vector3 _target;
-        private float _targetOpacity;
-
-        private void Start() {
-            Instance = this;
-            _renderer = GetComponent<SpriteRenderer>();
-            _renderer.color = Color.clear;
-        }
+        private readonly Color _whiteish = new(1, 1, 1, .8f);
 
         public static void Show(Vector3 position) {
             Instance.ShowInstance(position);
@@ -29,7 +29,7 @@ namespace UI {
 
         private void ShowInstance(Vector3 position) {
             _target = position + offset;
-            transform.position = _target + offset;
+            transform.position = _target + offset * .5f;
             StartCoroutine(FadeIn());
         }
 
@@ -39,7 +39,7 @@ namespace UI {
 
         private IEnumerator FadeIn() {
             _renderer.color = Color.clear;
-            return Fade(Color.white);
+            return Fade(_whiteish);
         }
 
         private IEnumerator FadeOut() {
@@ -59,6 +59,26 @@ namespace UI {
                 if (doPosition) transform.position = Vector3.Lerp(startPosition, _target, fraction);
                 yield return null;
             }
+        }
+
+        private void Start() {
+            Instance = this;
+            _renderer = GetComponent<SpriteRenderer>();
+            _renderer.color = Color.clear;
+            
+            GameManager.OnControlTypeChange += OnControlTypeChange;
+        }
+
+        private void OnDestroy() {
+            GameManager.OnControlTypeChange -= OnControlTypeChange;
+        }
+
+        private void OnControlTypeChange(ControlType controlType) {
+            _renderer.sprite = controlType switch {
+                ControlType.Keyboard => keyboardSprite,
+                ControlType.Dualshock => dualshockSprite,
+                _ => xboxLikeSprite
+            };
         }
     }
 }
