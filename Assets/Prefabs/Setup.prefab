@@ -72,9 +72,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 2019765923
-  m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingLayerID: -1608618667
+  m_SortingLayer: 3
+  m_SortingOrder: 9999
   m_Sprite: {fileID: 436783047, guid: 650f68295ed988d43b6a1ea019e46a50, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c70c9191a2614609af2ebd6bdab8dac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: {x: 0, y: 0.3, z: 0}
+  offset: {x: 0, y: 0.2, z: 0}
   easingTime: 0.3
   easingCurve:
     serializedVersion: 2
@@ -124,6 +124,9 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  keyboardSprite: {fileID: 436783047, guid: 650f68295ed988d43b6a1ea019e46a50, type: 3}
+  dualshockSprite: {fileID: 703327018, guid: 650f68295ed988d43b6a1ea019e46a50, type: 3}
+  xboxLikeSprite: {fileID: -1900482, guid: 650f68295ed988d43b6a1ea019e46a50, type: 3}
 --- !u!114 &1162726309483897949
 MonoBehaviour:
   m_ObjectHideFlags: 0
