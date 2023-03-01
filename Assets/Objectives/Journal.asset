@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Journal
   m_EditorClassIdentifier: 
   objectiveName: Journal
-  timer: 15
+  timer: 30
   delay: 1
   direction: 1
   scene:
