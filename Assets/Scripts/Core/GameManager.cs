@@ -24,7 +24,7 @@ namespace Core {
             }
         }
 
-        public static Action<ControlType> OnControlTypeChange = (type) => { };
+        public static Action<ControlType> OnControlTypeChange = type => { };
 
         private static string _returnScene;
         private static Objective _currentObjective;
@@ -35,7 +35,7 @@ namespace Core {
         public static void Bootstrap() {
             if (_initialized) return;
             _initialized = true;
-            
+
             InputSystem.onEvent += OnInputEvent;
         }
 
@@ -43,7 +43,8 @@ namespace Core {
             string name = device.displayName.ToLower();
             Debug.Log(device.description.deviceClass.ToLower());
 
-            if (name.Contains("xbox") || name.Contains("stadia") || device.description.deviceClass.ToLower().Contains("gamepad")) ControlType = ControlType.XboxLike;   
+            if (name.Contains("xbox") || name.Contains("stadia") ||
+                device.description.deviceClass.ToLower().Contains("gamepad")) ControlType = ControlType.XboxLike;
             else ControlType = ControlType.Keyboard;
         }
 
@@ -54,26 +55,28 @@ namespace Core {
 
         private static void OnHubLoad(Scene scene, LoadSceneMode mode) {
             if (_hubState.presentObjectives == null) return;
-            
+
             SceneManager.sceneLoaded -= OnHubLoad;
             HubState.Restore(_hubState);
             _hubState = HubState.Empty;
             GameState = GameState.Hub;
-            
-            PresentObjectiveInteraction presentObjective = (from obj in Object.FindObjectsOfType<PresentObjectiveInteraction>()
-                where obj.objective == _currentObjective select obj).FirstOrDefault();
+
+            PresentObjectiveInteraction presentObjective =
+                (from obj in Object.FindObjectsOfType<PresentObjectiveInteraction>()
+                    where obj.objective == _currentObjective
+                    select obj).FirstOrDefault();
             if (presentObjective != null) presentObjective.Complete();
         }
-        
+
         public static void StartLevel(Objective objective) {
             if (GameState == GameState.Hub) {
                 _returnScene = SceneManager.GetActiveScene().path;
                 _hubState = HubState.Collect();
             }
-            
+
             _currentObjective = objective;
             GameState = GameState.Level;
-            
+
             SceneHook.Get().QueueStartLevel(objective);
         }
     }

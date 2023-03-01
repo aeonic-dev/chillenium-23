@@ -4,50 +4,51 @@ using Util;
 
 namespace Core {
     [RequireComponent(typeof(BoxCollider2D))]
-        public class OldPlayer : MonoBehaviour {
-            [Header("Lateral Movement")] [Tooltip("Minimum input magnitude to start moving")] [Range(0, 1)]
-            public float moveDeadzone = .2f;
+    public class OldPlayer : MonoBehaviour {
+        [Header("Lateral Movement")] [Tooltip("Minimum input magnitude to start moving")] [Range(0, 1)]
+        public float moveDeadzone = .2f;
 
-            [Tooltip("Top lateral speed in units per second")]
-            public float moveSpeed = 5f;
+        [Tooltip("Top lateral speed in units per second")]
+        public float moveSpeed = 5f;
 
-            [Tooltip(
-                "Magnitude of lateral acceleration when the player is entering movement input (units per second squared)")]
-            public float moveAcceleration = 5f;
+        [Tooltip(
+            "Magnitude of lateral acceleration when the player is entering movement input (units per second squared)")]
+        public float moveAcceleration = 5f;
 
-            [Tooltip("Multiplier for x velocity when the player is not entering movement input")]
-            public float moveDecelerationMultiplier = .9f;
+        [Tooltip("Multiplier for x velocity when the player is not entering movement input")]
+        public float moveDecelerationMultiplier = .9f;
 
-            [Header("Jumping")] [Tooltip("Height at the peak of the player's jump")]
-            public float jumpHeight = 2f;
+        [Header("Jumping")] [Tooltip("Height at the peak of the player's jump")]
+        public float jumpHeight = 2f;
 
-            [Tooltip("Time in seconds the player takes to reach the peak of their jump")]
-            public float jumpTime = .8f;
+        [Tooltip("Time in seconds the player takes to reach the peak of their jump")]
+        public float jumpTime = .8f;
 
-            [Tooltip("Curve describing the ascending part of the player's jump")]
-            public AnimationCurve jumpCurve;
+        [Tooltip("Curve describing the ascending part of the player's jump")]
+        public AnimationCurve jumpCurve;
 
-            [Header("Physics")] [Tooltip("Acceleration due to gravity")]
-            public float gravity = -9.8f;
+        [Header("Physics")] [Tooltip("Acceleration due to gravity")]
+        public float gravity = -9.8f;
 
-            [Tooltip("Maximum fall speed")] public float terminalVelocity = -5f;
+        [Tooltip("Maximum fall speed")] public float terminalVelocity = -5f;
 
-            [Tooltip("Time in seconds the player can jump after leaving the ground")]
-            public float jumpGracePeriod = .1f;
+        [Tooltip("Time in seconds the player can jump after leaving the ground")]
+        public float jumpGracePeriod = .1f;
 
-            [Tooltip("Distance from the ground at which the player is considered grounded")]
-            public float groundDistance = .025f;
+        [Tooltip("Distance from the ground at which the player is considered grounded")]
+        public float groundDistance = .025f;
 
-            private Transform _transform;
-            private BoxCollider2D _collider;
-            
-            [Header("Internal")]
-            [ReadOnly] public float _xVelocity;
-            [ReadOnly] public float _yVelocity;
-            // Hacky good-feeling jumping: completely ignore velocity and use the jump curve instead
-            [ReadOnly] public bool _isJumping;
-            [ReadOnly] public float _jumpTimer;
-            [ReadOnly] public float _jumpGraceTimer;
+        private Transform _transform;
+        private BoxCollider2D _collider;
+
+        [Header("Internal")] [ReadOnly] public float _xVelocity;
+
+        [ReadOnly] public float _yVelocity;
+
+        // Hacky good-feeling jumping: completely ignore velocity and use the jump curve instead
+        [ReadOnly] public bool _isJumping;
+        [ReadOnly] public float _jumpTimer;
+        [ReadOnly] public float _jumpGraceTimer;
 
         public void TryJump() {
             if (CanJump()) Jump();
@@ -74,7 +75,7 @@ namespace Core {
             if (hit.collider == null) return float.PositiveInfinity;
             return hit.distance;
         }
-        
+
         public float GetCeilingDistance() {
             Bounds bounds = _collider.bounds;
             RaycastHit2D hit =
@@ -116,7 +117,8 @@ namespace Core {
                     _transform.position += Vector3.up * distance;
                     _jumpTimer += Time.deltaTime;
                 }
-            } else {
+            }
+            else {
                 float distanceToGround = GetGroundDistance();
                 if (distanceToGround < groundDistance) {
                     _jumpGraceTimer = 0;

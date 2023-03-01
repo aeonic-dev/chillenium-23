@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using Core;
 using UnityEngine;
 
@@ -49,12 +48,12 @@ namespace UI {
         private IEnumerator Fade(Color fadeTo, bool doPosition = true) {
             Color fadeFrom = _renderer.color;
             Vector3 startPosition = transform.position;
-            
+
             float time = 0f;
             while (time < easingTime) {
                 time += Time.deltaTime;
                 float fraction = easingCurve.Evaluate(time / easingTime);
-                
+
                 _renderer.color = Color.Lerp(fadeFrom, fadeTo, fraction);
                 if (doPosition) transform.position = Vector3.Lerp(startPosition, _target, fraction);
                 yield return null;
@@ -65,7 +64,7 @@ namespace UI {
             Instance = this;
             _renderer = GetComponent<SpriteRenderer>();
             _renderer.color = Color.clear;
-            
+
             GameManager.OnControlTypeChange += OnControlTypeChange;
         }
 

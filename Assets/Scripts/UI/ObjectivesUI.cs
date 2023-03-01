@@ -1,5 +1,4 @@
-﻿using System;
-using Unity.VisualScripting;
+﻿using Unity.VisualScripting;
 using UnityEngine;
 
 namespace UI {
@@ -18,7 +17,7 @@ namespace UI {
             _index++;
             hearts[_index].ShowLeft();
         }
-        
+
         public void PutRight() {
             hearts[_index].ShowRight();
         }
