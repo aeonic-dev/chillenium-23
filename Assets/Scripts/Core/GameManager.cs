@@ -66,10 +66,13 @@ namespace Core {
         }
         
         public static void StartLevel(Objective objective) {
+            if (GameState == GameState.Hub) {
+                _returnScene = SceneManager.GetActiveScene().path;
+                _hubState = HubState.Collect();
+            }
+            
             _currentObjective = objective;
             GameState = GameState.Level;
-            _returnScene = SceneManager.GetActiveScene().path;
-            _hubState = HubState.Collect();
             
             SceneHook.Get().QueueStartLevel(objective);
         }
