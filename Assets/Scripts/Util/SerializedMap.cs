@@ -21,6 +21,10 @@ public class SerializedMap<K, V> : ISerializationCallbackReceiver {
     public V Get(K key) {
         return valueMap[key];
     }
+    
+    public bool Contains(K key) {
+        return valueMap.ContainsKey(key);
+    }
 
     public V GetOrDefault(K key, V fallback) {
         return valueMap.ContainsKey(key) ? valueMap[key] : fallback;

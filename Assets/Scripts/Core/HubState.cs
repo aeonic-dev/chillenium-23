@@ -36,8 +36,10 @@ namespace Core {
             player.GetComponent<Rigidbody2D>().velocity = JsonUtility.FromJson<Vector2>(state.playerVelocity);
             
             foreach (PresentObjectiveInteraction obj in Object.FindObjectsOfType<PresentObjectiveInteraction>()) {
-                string data = state.presentObjectives.Get(obj.objective.objectiveName);
-                if (data != null) JsonUtility.FromJsonOverwrite(data, obj);
+                if (state.presentObjectives.Contains(obj.objective.objectiveName)) {
+                    string data = state.presentObjectives.Get(obj.objective.objectiveName);
+                    if (data != null) JsonUtility.FromJsonOverwrite(data, obj);
+                }
             }
         }
     }
