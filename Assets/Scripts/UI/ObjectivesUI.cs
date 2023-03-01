@@ -2,6 +2,21 @@
 using UnityEngine;
 
 namespace UI {
+    
+/*
+         _--"-.
+      .-"      "-.
+     |""--..      '-.
+     |      ""--..   '-.
+     |.-. .-".    ""--..".
+     |'./  -_'  .-.      |
+     |      .-. '.-'   .-'
+     '--..  '.'    .-  -.
+          ""--..   '_'   :
+                ""--..   |
+                      ""-'
+*/
+    
     public class ObjectivesUI : MonoBehaviour {
         public ObjectiveHeart[] hearts;
 
