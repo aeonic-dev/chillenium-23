@@ -4,6 +4,26 @@ using UnityEngine;
 using UnityEngine.Events;
 using Util;
 
+/*
+         ____
+        |    |
+        |____|
+       _|____|_
+        /  ee`.
+      .<     __O
+     /\ \.-.' \
+    J  `.|`.\/ \
+    | |_.|  | | |
+     \__.'`.|-' /
+     L   /|o`--'\ 
+     |  /\/\/\   \           
+     J /      `.__\
+     |/         /  \     
+      \\      .'`.  `.                                            .'
+    ____)_/\_(____`.  `-._______________________________________.'/
+   (___._/  \_.___) `-.________________________________________.-'
+ */
+
 namespace Gameplay.Interactions {
     [RequireComponent(typeof(SpriteRenderer))]
     public class PresentObjectiveInteraction : Interaction {

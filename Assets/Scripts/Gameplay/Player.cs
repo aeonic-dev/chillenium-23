@@ -1,38 +1,42 @@
-﻿using System;
-using UI;
+﻿using UI;
 using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Gameplay {
     [RequireComponent(typeof(Rigidbody2D))]
     public class Player : MonoBehaviour {
-        [Header("Lateral Movement")]
-        [Tooltip("Minimum input magnitude to start moving")] [Range(0, 1)]
+        [Header("Lateral Movement")] [Tooltip("Minimum input magnitude to start moving")] [Range(0, 1)]
         public float moveDeadzone = .2f;
+
         [Tooltip("Top lateral speed in units per second")]
         public float moveSpeed = 5f;
-        [Tooltip("Magnitude of lateral acceleration when the player is entering movement input (units per second squared)")]
+
+        [Tooltip(
+            "Magnitude of lateral acceleration when the player is entering movement input (units per second squared)")]
         public float moveAcceleration = 5f;
+
         [Tooltip("Multiplier for x velocity when the player is not entering movement input")]
         public float moveDecelerationMultiplier = .9f;
 
-        [Header("Jumping")]
-        [Tooltip("Magnitude of jumping force")]
+        [Header("Jumping")] [Tooltip("Magnitude of jumping force")]
         public float jumpForce = 2f;
+
         [Tooltip("Time in seconds the player can jump after leaving the ground or before touching it.")]
         public float jumpGracePeriod = .05f;
+
         [Tooltip("A cooldown for jumping to avoid cheaty double jumps")]
         public float jumpCooldown = .05f;
+
         [Tooltip("Distance from the player's origin to the ground at which the player is considered grounded")]
         public float groundDistance = .5f;
+
         [Tooltip("Threshold for the ground distance at which the player is considered grounded")]
         public float groundThreshold = .1f;
-        
+
         private static Player _instance;
 
         private Transform _transform;
         private Rigidbody2D _rigidbody;
-        private CapsuleCollider2D _capsuleCollider;
         private SpriteRenderer _spriteRenderer;
         private Animator _animator;
         private Interaction _hoveredInteraction;
@@ -51,9 +55,43 @@ namespace Gameplay {
         }
 
         private bool IsGrounded() {
-            RaycastHit2D hit = Physics2D.Raycast(_transform.position - Vector3.up * groundDistance, Vector2.down, groundThreshold);
+            RaycastHit2D hit = Physics2D.Raycast(_transform.position - Vector3.up * groundDistance, Vector2.down,
+                groundThreshold);
             return hit.collider != null;
         }
+        
+/*
+                                            ____-----__
+                                        .--'           `\
+                                      .'                 `.
+                                    .'                     \
+                      _______     .'                        `.
+             ____,---'   ~~~<.---'                            \
+           _C~           `--'                                  \
+  __--x_x-'  .~      `---'                                      `
+ | /         \'                                                  |
+  \|                                                             |
+   \   \  ,                                             __       `,
+    `~~ ~~ --__                                       .'  \       |
+      `` \_                                          '     |      |
+           `-._                                     /       `    /
+               `-.___/--.              /           /         |  /
+                         `~~--__       \          /          | <
+                        __>     `,     >         |          /   \
+                    .--'         /   ,'`---.___ .'           /   `.
+                  .'    ___.---'/   /           |           /      `.___
+                .'   .~~    .--'   /             \_      __/ \          `.
+                |'/\|      /,   __,'               `----'     `.__        `,
+                \'         `/._/                   //.<          `---.."   |
+                            `'                     VV V        __..--'    .'
+                                                             .'         .'
+                                                           .'   .------'
+                                                           |  .'
+                                                   ______.'   |
+                                                 .'         .'
+                                   __====_`-----'  .-------'
+                                          `-------'
+*/
 
         private void OnTriggerEnter2D(Collider2D col) {
             Interaction interaction = col.gameObject.GetComponent<Interaction>();
@@ -78,7 +116,6 @@ namespace Gameplay {
         private void Start() {
             _transform = transform;
             _rigidbody = GetComponent<Rigidbody2D>();
-            _capsuleCollider = GetComponent<CapsuleCollider2D>();
             _spriteRenderer = GetComponent<SpriteRenderer>();
             _animator = GetComponent<Animator>();
         }
@@ -88,10 +125,11 @@ namespace Gameplay {
             if (Mathf.Abs(xInput) > moveDeadzone) {
                 if (Mathf.Abs(_rigidbody.velocity.x) < moveSpeed)
                     _rigidbody.AddForce(Vector2.right * (xInput * moveAcceleration), ForceMode2D.Impulse);
-            } else {
+            }
+            else {
                 _rigidbody.velocity *= new Vector2(moveDecelerationMultiplier, 1);
             }
-            
+
             if (xInput != 0) _spriteRenderer.flipX = xInput > 0;
         }
 
@@ -109,7 +147,8 @@ namespace Gameplay {
                     _groundTimer = jumpGracePeriod + 1;
                     _rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 }
-            } else if (Input.GetButtonDown("Jump")) {
+            }
+            else if (Input.GetButtonDown("Jump")) {
                 if (CanJump()) {
                     if (_jumpTimer > jumpCooldown) {
                         _jumpQueued = false;
@@ -117,14 +156,16 @@ namespace Gameplay {
                         _groundTimer = jumpGracePeriod + 1;
                         _rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                     }
-                } else {
+                }
+                else {
                     _jumpQueued = true;
                     _jumpQueueTimer = 0;
                 }
             }
 
             if (_hoveredInteraction != null && !_hoveredInteraction.IsInteractable()) _hoveredInteraction = null;
-            if (_hoveredInteraction != null && Input.GetButtonDown("Interact")) {
+            if (Input.GetButtonDown("Interact") && _hoveredInteraction != null &&
+                _hoveredInteraction.IsInteractable()) {
                 _hoveredInteraction.Interact();
                 _animator.SetTrigger("Interact");
                 Invoke(nameof(ResetInteractTrigger), .5f);

@@ -1,6 +1,4 @@
-﻿using Core;
-using UnityEngine;
-using Util;
+﻿using UnityEngine;
 
 namespace UI {
     public class ExitButton : SpriteButton {

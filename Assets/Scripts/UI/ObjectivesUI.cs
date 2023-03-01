@@ -1,8 +1,22 @@
-﻿using System;
-using Unity.VisualScripting;
+﻿using Unity.VisualScripting;
 using UnityEngine;
 
 namespace UI {
+    
+/*
+         _--"-.
+      .-"      "-.
+     |""--..      '-.
+     |      ""--..   '-.
+     |.-. .-".    ""--..".
+     |'./  -_'  .-.      |
+     |      .-. '.-'   .-'
+     '--..  '.'    .-  -.
+          ""--..   '_'   :
+                ""--..   |
+                      ""-'
+*/
+    
     public class ObjectivesUI : MonoBehaviour {
         public ObjectiveHeart[] hearts;
 
@@ -18,7 +32,7 @@ namespace UI {
             _index++;
             hearts[_index].ShowLeft();
         }
-        
+
         public void PutRight() {
             hearts[_index].ShowRight();
         }
