@@ -299,9 +299,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveDeadzone: 0.2
-  moveSpeed: 3
-  moveAcceleration: 0.3
-  moveDecelerationMultiplier: 0.95
+  moveSpeed: 2.7
+  moveAcceleration: 2.7
+  moveDecelerationMultiplier: 0.5
   jumpForce: 10
   jumpGracePeriod: 0.1
   jumpCooldown: 0.02
@@ -362,7 +362,7 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 7623703029318248104}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: fbef695422c2a264498308dace8e7931, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

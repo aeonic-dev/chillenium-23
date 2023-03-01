@@ -14,22 +14,22 @@ namespace UI {
         public void ShowLeft() {
             leftPiece.enabled = true;
         }
-        
+
         public void ShowRight() {
             rightPiece.enabled = true;
             ShowCombined();
         }
-        
+
         public void ShowCombined() {
             combined.color = Color.clear;
             combined.enabled = true;
 
             StartCoroutine(FadeInCombined(fadeDelay));
         }
-        
+
         private IEnumerator FadeInCombined(float delay) {
             yield return new WaitForSeconds(delay);
-            
+
             var timer = 0f;
             while (timer < fadeTime) {
                 timer += Time.deltaTime;
