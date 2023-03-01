@@ -124,7 +124,7 @@ namespace Gameplay {
             }
 
             if (_hoveredInteraction != null && !_hoveredInteraction.IsInteractable()) _hoveredInteraction = null;
-            if (_hoveredInteraction != null && Input.GetButtonDown("Interact")) {
+            if (Input.GetButtonDown("Interact") && _hoveredInteraction != null && _hoveredInteraction.IsInteractable()) {
                 _hoveredInteraction.Interact();
                 _animator.SetTrigger("Interact");
                 Invoke(nameof(ResetInteractTrigger), .5f);
