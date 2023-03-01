@@ -23,6 +23,13 @@ namespace Core {
                 _controlType = value;
             }
         }
+        
+/*
+                   .---.
+              (\./)     \.......-
+              >' '<  (__.'""""BP
+              " ` " "
+*/
 
         public static Action<ControlType> OnControlTypeChange = type => { };
 

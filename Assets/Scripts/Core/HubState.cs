@@ -13,6 +13,21 @@ namespace Core {
         public SerializedMap<string, string> presentObjectives;
 
         public static HubState Empty = new();
+        
+/*
+             __             _,-"~^"-.
+       _// )      _,-"~`         `.
+     ." ( /`"-,-"`                 ;
+    / 6                             ;
+   /           ,             ,-"     ;
+  (,__.--.      \           /        ;
+   //'   /`-.\   |          |        `._________
+     _.-'_/`  )  )--...,,,___\     \-----------,)
+   ((("~` _.-'.-'           __`-.   )         //
+     jgs ((("`             (((---~"`         //
+                                            ((________________
+                                            `----""""~~~~^^^```
+*/
 
         public static HubState Collect() {
             var state = new HubState {
